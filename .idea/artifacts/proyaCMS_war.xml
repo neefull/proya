@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="proyaCMS:war">
+    <output-path>$PROJECT_DIR$/proyaCMS/target</output-path>
+    <root id="archive" name="proyaCMS.war">
+      <element id="artifact" artifact-name="proyaCMS:war exploded" />
+    </root>
+  </artifact>
+</component>

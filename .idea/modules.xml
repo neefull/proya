@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/proya.iml" filepath="$PROJECT_DIR$/proya.iml" />
+      <module fileurl="file://$PROJECT_DIR$/proyaCMS/proyaCMS.iml" filepath="$PROJECT_DIR$/proyaCMS/proyaCMS.iml" />
+    </modules>
+  </component>
+</project>
