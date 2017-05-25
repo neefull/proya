@@ -1,5 +1,6 @@
 package com.proya.controller.admin;
 
+import com.proya.common.BaseController;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
@@ -8,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
  */
 @Controller
 @RequestMapping("indexAdmin")
-public class IndexAdminController {
+public class IndexAdminController extends BaseController{
 
     @RequestMapping("/helloworld")
     public String hello(){
