@@ -5,10 +5,5 @@ package com.proya.common;
  */
 public abstract class BaseService<T>  /*implements Manager<T>*/ {
 
-    protected BaseDao<T> basedao;
-
-    public int insert(T t) {
-        return basedao.insert(t);
-    }
 
 }

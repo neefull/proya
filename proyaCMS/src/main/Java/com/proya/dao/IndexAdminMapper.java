@@ -1,6 +1,7 @@
-package com.proya.controller.admin;
+package com.proya.dao;
 
-import com.proya.common.BaseDao;
+
+import com.proya.entity.IndexAdmin;
 
 /**
  * Created by wzf on 2017/5/26.

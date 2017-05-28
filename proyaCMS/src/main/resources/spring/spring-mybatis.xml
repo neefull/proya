@@ -7,7 +7,7 @@
 	   http://www.springframework.org/schema/context
 	   http://www.springframework.org/schema/context/spring-context-4.0.xsd"
        default-lazy-init="true">
-    <description>spring-mybatis Configuration</description>
+    <description> spring-mybatis Configuration</description>
 
     <!-- 加载配置属性文件 -->
     <context:property-placeholder ignore-unresolvable="true" location="classpath:config/*.properties"/>
@@ -47,20 +47,28 @@
         <!-- 监控数据库 -->
         <property name="filters" value="mergeStat" />
     </bean>
+
     <!-- myBatis文件 -->
     <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <!-- 注入数据源 -->
         <property name="dataSource" ref="dataSource" />
-        <!-- 自动扫描entity目录, 省掉Configuration.xml里的手工配置 -->
-        <!--<property name="mapperLocations" value="classpath:com/proya/controller" />-->
-
-        <property name="mapperLocations" value="classpath:/mappings/*.xml"/>
+        <!-- mybatis全局配置文件 -->
         <property name="configLocation" value="classpath:/mybatis/mybatis-config.xml"></property>
+        <!-- mapper扫描 -->
+        <property name="mapperLocations" value="classpath:/mappings/*.xml"/>
+
+        <!-- 扫描entity包 -->
+        <property name="typeAliasesPackage" value="com.proya.entity"/>
 
     </bean>
-  <!--  <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-        <property name="basePackage" value="com.feidai.report.web.mapper" />
-        <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory" />
-    </bean>-->
+    <!-- 配置mapper扫描器 -->
+    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+        <!-- 扫描包路径，如果需要扫描多个包中间用半角逗号隔开 -->
+        <property name="basePackage" value="com.proya.dao"></property>
+        <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"/>
+    </bean>
+
+
     <!-- 配置事务管理器 -->
     <bean id="transactionManager"
           class="org.springframework.jdbc.datasource.DataSourceTransactionManager">

@@ -1,6 +1,7 @@
-package com.proya.controller.admin;
+package com.proya.service;
 
-import com.proya.common.BaseService;
+import com.proya.dao.IndexAdminMapper;
+import com.proya.entity.IndexAdmin;
 import org.springframework.stereotype.Service;
 
 /**
@@ -9,6 +10,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class IndexAdminService /*extends BaseService<IndexAdmin>*/ {
     private IndexAdminMapper mapper;
+
     public int insert(IndexAdmin indexAdmin) {
         return mapper.insert(indexAdmin);
     }

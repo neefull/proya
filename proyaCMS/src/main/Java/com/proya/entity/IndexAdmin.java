@@ -1,4 +1,4 @@
-package com.proya.controller.admin;
+package com.proya.entity;
 
 import java.util.Date;
 

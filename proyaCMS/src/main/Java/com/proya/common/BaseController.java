@@ -61,8 +61,5 @@ public abstract class BaseController<T> {
     }
 
 
-    public int insert(T t) {
-        return baseService.insert(t);
-    }
 
 }
