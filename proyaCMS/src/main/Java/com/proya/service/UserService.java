@@ -16,4 +16,8 @@ public class UserService {
     public int insert(User user) {
         return mapper.insert(user);
     }
+
+    public User selectByPrimaryKey(Integer id) {
+        return mapper.selectByPrimaryKey(id);
+    }
 }

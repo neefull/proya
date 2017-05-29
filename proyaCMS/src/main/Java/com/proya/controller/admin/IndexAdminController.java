@@ -36,12 +36,14 @@ public class IndexAdminController extends BaseController{
         indexAdmin.setPassword("111");
         indexAdmin.setUsername("ewrew");
         indexAdminService.insert(indexAdmin);
+
         return "index";
     }
     @RequestMapping("/userService")
     public String insert(User user){
         user.setUsername("21sdf");
         userService.insert(user);
+        user =userService.selectByPrimaryKey(1);
         return "index";
     }
 }
