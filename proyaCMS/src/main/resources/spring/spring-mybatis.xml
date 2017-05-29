@@ -58,8 +58,8 @@
         <!-- mapper扫描 -->
         <property name="mapperLocations" value="classpath:/mappings/*.xml"/>
 
-       <!-- &lt;!&ndash; 扫描entity包 &ndash;&gt;
-        <property name="typeAliasesPackage" value="com.proya.entity"/>-->
+        <!-- 扫描entity包 不需要-->
+        <property name="typeAliasesPackage" value="com.proya.entity"/>
 
     </bean>
     <!-- 配置mapper扫描器 -->
