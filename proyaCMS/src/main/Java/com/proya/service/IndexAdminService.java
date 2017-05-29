@@ -2,6 +2,7 @@ package com.proya.service;
 
 import com.proya.dao.IndexAdminMapper;
 import com.proya.entity.IndexAdmin;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 /**
@@ -9,6 +10,7 @@ import org.springframework.stereotype.Service;
  */
 @Service
 public class IndexAdminService /*extends BaseService<IndexAdmin>*/ {
+    @Autowired
     private IndexAdminMapper mapper;
 
     public int insert(IndexAdmin indexAdmin) {

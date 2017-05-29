@@ -1,6 +1,5 @@
 package com.proya.common;
 
-import org.apache.commons.lang3.StringEscapeUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.WebDataBinder;
@@ -31,7 +30,7 @@ public abstract class BaseController<T> {
         return request.getSession();
     }
 
-    @InitBinder
+    /*@InitBinder
     protected void initBinder(WebDataBinder binder) {
         // String类型转换，将所有传递进来的String进行HTML编码，防止XSS攻击
         binder.registerCustomEditor(String.class, new PropertyEditorSupport() {
@@ -58,7 +57,7 @@ public abstract class BaseController<T> {
 //				return value != null ? DateUtils.formatDateTime((Date)value) : "";
 //			}
         });
-    }
+    }*/
 
 
 

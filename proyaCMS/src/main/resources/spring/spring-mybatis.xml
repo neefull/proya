@@ -48,17 +48,18 @@
         <property name="filters" value="mergeStat" />
     </bean>
 
+
     <!-- myBatis文件 -->
     <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
         <!-- 注入数据源 -->
         <property name="dataSource" ref="dataSource" />
         <!-- mybatis全局配置文件 -->
-        <property name="configLocation" value="classpath:/mybatis/mybatis-config.xml"></property>
+        <property name="configLocation" value="classpath:/config/mybatis-config.xml"></property>
         <!-- mapper扫描 -->
         <property name="mapperLocations" value="classpath:/mappings/*.xml"/>
 
-        <!-- 扫描entity包 -->
-        <property name="typeAliasesPackage" value="com.proya.entity"/>
+       <!-- &lt;!&ndash; 扫描entity包 &ndash;&gt;
+        <property name="typeAliasesPackage" value="com.proya.entity"/>-->
 
     </bean>
     <!-- 配置mapper扫描器 -->
