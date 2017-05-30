@@ -1,16 +1,10 @@
 package com.proya.common;
 
-import com.proya.dao.UserMapper;
-import com.proya.entity.User;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.web.bind.WebDataBinder;
-import org.springframework.web.bind.annotation.InitBinder;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
-import java.beans.PropertyEditorSupport;
-import java.util.Date;
 
 /**
  * Created by wzf on 2017/5/25.
