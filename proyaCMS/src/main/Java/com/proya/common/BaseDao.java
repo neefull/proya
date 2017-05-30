@@ -7,7 +7,6 @@ public interface BaseDao<T>{
     /**
      * 增加记录
      *
-     * @param t
      * @return
      */
      int insert(T t);
@@ -15,7 +14,6 @@ public interface BaseDao<T>{
     /**
      * 修改记录
      *
-     * @param t
      * @return
      */
      int update(T t);
@@ -24,7 +22,6 @@ public interface BaseDao<T>{
     /**
      * 刪除
      *
-     * @param id
      * @return
      */
      int delete(String id);
@@ -32,7 +29,6 @@ public interface BaseDao<T>{
     /**
      * 刪除
      *
-     * @param id
      * @return
      */
      int delete(T t);

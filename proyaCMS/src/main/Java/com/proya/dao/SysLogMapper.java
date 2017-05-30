@@ -1,8 +1,9 @@
 package com.proya.dao;
 
+import com.proya.common.BaseDao;
 import com.proya.entity.SysLog;
 
-public interface SysLogMapper {
+public interface SysLogMapper extends BaseDao<SysLog> {
     int deleteByPrimaryKey(Long id);
 
     int insert(SysLog record);

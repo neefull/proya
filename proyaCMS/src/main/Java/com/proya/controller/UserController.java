@@ -1,4 +1,4 @@
-package com.proya.controller.admin;
+package com.proya.controller;
 
 import com.proya.common.BaseController;
 import com.proya.entity.SysLog;
@@ -12,11 +12,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import java.util.Date;
 
 /**
- * Created by wzf on 2017/5/23.
+ * Created by wzf on 2017/5/30.
  */
+
 @Controller
-@RequestMapping("indexAdmin")
-public class IndexAdminController extends BaseController{
+@RequestMapping("user")
+public class UserController extends BaseController {
+
 
     @Autowired
     private UserService userService;
@@ -47,4 +49,5 @@ public class IndexAdminController extends BaseController{
         sysLogService.insert(sysLog);
         return "index";
     }
+
 }
