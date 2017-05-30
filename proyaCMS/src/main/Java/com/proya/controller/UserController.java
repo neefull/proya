@@ -33,9 +33,9 @@ public class UserController extends BaseController {
 
     @RequestMapping("/userService")
     public String insert(User user){
-        user.setUsername("21sdf");
-        userService.insert(user);
-//        user =userService.selectByPrimaryKey(1);
+//        user.setUsername("21sdf");
+//        userService.insert(user);
+        userService.aa();
         return "index";
     }
 
@@ -47,6 +47,8 @@ public class UserController extends BaseController {
         sysLog.setMethod("23");
         sysLog.setParams("3");
         sysLogService.insert(sysLog);
+
+
         return "index";
     }
 

@@ -4,15 +4,5 @@ import com.proya.common.BaseDao;
 import com.proya.entity.SysLog;
 
 public interface SysLogMapper extends BaseDao<SysLog> {
-    int deleteByPrimaryKey(Long id);
 
-    int insert(SysLog record);
-
-    int insertSelective(SysLog record);
-
-    SysLog selectByPrimaryKey(Long id);
-
-    int updateByPrimaryKeySelective(SysLog record);
-
-    int updateByPrimaryKey(SysLog record);
 }
