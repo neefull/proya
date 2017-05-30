@@ -16,12 +16,13 @@ import static org.junit.Assert.*;
  */
 public class SysLogServiceTest {
 
-   @Autowired
-   private  SysLogService sysLogService;
-
+    @Autowired
+    private static  SysLogService sysLogService;
     @BeforeClass
     public static void init() {//junit之前init spring
         ApplicationContext context = new ClassPathXmlApplicationContext("classpath*:test/test.xml");//这里路径之前没有配对于是一直出错
+
+        sysLogService = (SysLogService)context.getBean("SysLogService");
     }
 
 

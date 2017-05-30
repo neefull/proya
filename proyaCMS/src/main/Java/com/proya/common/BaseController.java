@@ -1,5 +1,7 @@
 package com.proya.common;
 
+import com.proya.dao.UserMapper;
+import com.proya.entity.User;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.WebDataBinder;
@@ -14,8 +16,6 @@ import java.util.Date;
  * Created by wzf on 2017/5/25.
  */
 public abstract class BaseController<T> {
-
-    protected BaseService<T> baseService;
 
     /**
      * 日志对象

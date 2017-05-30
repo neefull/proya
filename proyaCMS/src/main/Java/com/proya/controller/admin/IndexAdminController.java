@@ -33,7 +33,7 @@ public class IndexAdminController extends BaseController{
     public String insert(User user){
         user.setUsername("21sdf");
         userService.insert(user);
-        user =userService.selectByPrimaryKey(1);
+//        user =userService.selectByPrimaryKey(1);
         return "index";
     }
 

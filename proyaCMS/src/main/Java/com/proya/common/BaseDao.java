@@ -3,58 +3,37 @@ package com.proya.common;
 /**
  * Created by wzf on 2017/5/25.
  */
-public interface BaseDao {
+public interface BaseDao<T>{
     /**
-     * 保存对象
-     * @param str
-     * @param obj
+     * 增加记录
+     *
+     * @param t
      * @return
-     * @throws Exception
      */
-    public Object insert(String str, Object obj) throws Exception;
+     int insert(T t);
 
     /**
-     * 修改对象
-     * @param str
-     * @param obj
+     * 修改记录
+     *
+     * @param t
      * @return
-     * @throws Exception
      */
-    public Object update(String str, Object obj) throws Exception;
+     int update(T t);
+
 
     /**
-     * 删除对象
-     * @param str
-     * @param obj
+     * 刪除
+     *
+     * @param id
      * @return
-     * @throws Exception
      */
-    public Object delete(String str, Object obj) throws Exception;
+     int delete(String id);
 
     /**
-     * 查找对象
-     * @param str
-     * @param obj
+     * 刪除
+     *
+     * @param id
      * @return
-     * @throws Exception
      */
-    public Object findForObject(String str, Object obj) throws Exception;
-
-    /**
-     * 查找对象
-     * @param str
-     * @param obj
-     * @return
-     * @throws Exception
-     */
-    public Object findForList(String str, Object obj) throws Exception;
-
-    /**
-     * 查找对象封装成Map
-     * @param s
-     * @param obj
-     * @return
-     * @throws Exception
-     */
-    public Object findForMap(String sql, Object obj, String key , String value) throws Exception;
+     int delete(T t);
 }
