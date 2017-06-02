@@ -1,4 +1,4 @@
-package cfx.proya;
+package cxf.proya;
 
 /**
  * Created by wzf on 2017/5/31.
