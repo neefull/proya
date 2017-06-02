@@ -1,4 +1,4 @@
-package cfx.proya;
+package cxf.proya;
 
 import org.apache.cxf.jaxws.JaxWsServerFactoryBean;
 
