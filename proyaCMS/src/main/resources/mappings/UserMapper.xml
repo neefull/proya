@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="com.proya.dao.UserMapper">
-    <resultMap id="BaseResultMap" type="com.proya.entity.User">
+<mapper namespace="com.dao.UserMapper">
+    <resultMap id="BaseResultMap" type="com.entity.User">
         <id column="id" property="id" jdbcType="INTEGER"/>
     </resultMap>
-    <resultMap id="ResultMapWithBLOBs" type="com.proya.entity.User" extends="BaseResultMap">
+    <resultMap id="ResultMapWithBLOBs" type="com.entity.User" extends="BaseResultMap">
         <result column="username" property="username" jdbcType="VARBINARY"/>
     </resultMap>
     <sql id="Base_Column_List">
@@ -25,11 +25,11 @@
     delete from user
     where id = #{id,jdbcType=INTEGER}
   </delete>
-    <insert id="insert" parameterType="com.proya.entity.User">
+    <insert id="insert" parameterType="com.entity.User">
     insert into user (id, username)
     values (#{id,jdbcType=INTEGER}, #{username,jdbcType=VARBINARY})
   </insert>
-    <insert id="insertSelective" parameterType="com.proya.entity.User">
+    <insert id="insertSelective" parameterType="com.entity.User">
         insert into user
         <trim prefix="(" suffix=")" suffixOverrides=",">
             <if test="id != null">
@@ -48,7 +48,7 @@
             </if>
         </trim>
     </insert>
-    <update id="updateByPrimaryKeySelective" parameterType="com.proya.entity.User">
+    <update id="updateByPrimaryKeySelective" parameterType="com.entity.User">
         update user
         <set>
             <if test="username != null">
@@ -57,7 +57,7 @@
         </set>
         where id = #{id,jdbcType=INTEGER}
     </update>
-    <update id="updateByPrimaryKeyWithBLOBs" parameterType="com.proya.entity.User">
+    <update id="updateByPrimaryKeyWithBLOBs" parameterType="com.entity.User">
     update user
     set username = #{username,jdbcType=VARBINARY}
     where id = #{id,jdbcType=INTEGER}

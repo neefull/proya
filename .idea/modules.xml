@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/proya.iml" filepath="$PROJECT_DIR$/proya.iml" />
+      <module fileurl="file://$PROJECT_DIR$/proyaAPI/proyaAPI.iml" filepath="$PROJECT_DIR$/proyaAPI/proyaAPI.iml" />
+      <module fileurl="file://$PROJECT_DIR$/proyaBase/proyaBase.iml" filepath="$PROJECT_DIR$/proyaBase/proyaBase.iml" />
       <module fileurl="file://$PROJECT_DIR$/proyaCMS/proyaCMS.iml" filepath="$PROJECT_DIR$/proyaCMS/proyaCMS.iml" />
     </modules>
   </component>

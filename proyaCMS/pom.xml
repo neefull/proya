@@ -10,6 +10,13 @@
     <packaging>war</packaging>
     <name>proyaCMS Maven Webapp</name>
     <url>http://maven.apache.org</url>
+
+
+    <modules>
+        <module>../proyaBase</module>
+    </modules>
+
+
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -36,7 +43,7 @@
             <version>RELEASE</version>
         </dependency>
         <!-- LOGGING begin -->
-        <dependency>
+       <!-- <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-api</artifactId>
             <version>${slf4j.version}</version>
@@ -45,25 +52,25 @@
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-log4j12</artifactId>
             <version>${slf4j.version}</version>
-        </dependency>
+        </dependency>-->
         <!-- common-logging 实际调用slf4j -->
         <dependency>
             <groupId>commons-logging</groupId>
             <artifactId>commons-logging</artifactId>
             <version>1.2</version>
         </dependency>
-
+<!--
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>jcl-over-slf4j</artifactId>
             <version>${slf4j.version}</version>
         </dependency>
-        <!-- java.util.logging 实际调用slf4j -->
+        &lt;!&ndash; java.util.logging 实际调用slf4j &ndash;&gt;
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>jul-to-slf4j</artifactId>
             <version>${slf4j.version}</version>
-        </dependency>
+        </dependency>-->
         <!-- LOGGING end -->
 
         <!-- http://mvnrepository.com/artifact/commons-io/commons-io -->
@@ -254,7 +261,7 @@
         </dependency>
 
         <!--cfx webservice-->
-        <dependency>
+        <!--<dependency>
             <groupId>org.apache.cxf</groupId>
             <artifactId>cxf-rt-frontend-jaxws</artifactId>
             <version>${cxf.version}</version>
@@ -288,7 +295,7 @@
             <groupId>javax.ws.rs</groupId>
             <artifactId>jsr311-api</artifactId>
             <version>1.1.1</version>
-        </dependency>
+        </dependency>-->
 
 
     </dependencies>
@@ -296,4 +303,5 @@
     <build>
         <finalName>proyaCMS</finalName>
     </build>
+
 </project>

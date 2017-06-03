@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="proyaAPI:war">
+    <output-path>$PROJECT_DIR$/proyaAPI/target</output-path>
+    <root id="archive" name="proyaAPI.war">
+      <element id="artifact" artifact-name="proyaAPI:war exploded" />
+    </root>
+  </artifact>
+</component>

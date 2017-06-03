@@ -6,11 +6,15 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="proyaAPI" />
+        <module name="proyaBase" />
         <module name="proyaCMS" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="proya" target="1.5" />
+      <module name="proyaAPI" target="1.6" />
+      <module name="proyaBase" target="1.5" />
       <module name="proyaCMS" target="1.5" />
     </bytecodeTargetLevel>
   </component>
