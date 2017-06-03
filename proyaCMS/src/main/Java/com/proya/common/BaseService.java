@@ -1,4 +1,4 @@
-package com.common;
+package com.proya.common;
 
 import org.springframework.beans.factory.annotation.Autowired;
 

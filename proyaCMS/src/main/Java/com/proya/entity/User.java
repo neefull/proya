@@ -1,4 +1,4 @@
-package com.entity;
+package com.proya.entity;
 
 /**
  * Created by wzf on 2017/5/28.

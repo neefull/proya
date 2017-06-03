@@ -15,7 +15,7 @@
       <module name="proya" target="1.5" />
       <module name="proyaAPI" target="1.6" />
       <module name="proyaBase" target="1.5" />
-      <module name="proyaCMS" target="1.5" />
+      <module name="proyaCMS" target="1.6" />
     </bytecodeTargetLevel>
   </component>
 </project>

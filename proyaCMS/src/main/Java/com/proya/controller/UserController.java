@@ -1,10 +1,10 @@
-package com.controller;
+package com.proya.controller;
 
-import com.entity.SysLog;
-import com.entity.User;
-import com.common.BaseController;
-import com.service.SysLogService;
-import com.service.UserService;
+import com.proya.entity.SysLog;
+import com.proya.entity.User;
+import com.proya.common.BaseController;
+import com.proya.service.SysLogService;
+import com.proya.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;

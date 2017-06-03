@@ -12,12 +12,11 @@
     <context-param>
         <param-name>contextConfigLocation</param-name>
         <param-value>classpath*:spring/spring-*.xml</param-value>
-<!--
-        <param-name>log4jConfigLocation</param-name>
+        <!--<param-name>log4jConfigLocation</param-name>
         <param-value>classpath*:config/log4j.properties</param-value>-->
     </context-param>
     <!--启动一个watchdog线程每1800秒扫描一下log4j配置文件的变化-->
-   <!-- <context-param>
+    <!--<context-param>
         <param-name>log4jRefreshInterval</param-name>
         <param-value>1800000</param-value>
     </context-param>
@@ -32,6 +31,10 @@
     <!-- 防止spring内存溢出监听器 -->
     <listener>
         <listener-class>org.springframework.web.util.IntrospectorCleanupListener</listener-class>
+    </listener>
+
+    <listener>
+        <listener-class>org.springframework.web.context.request.RequestContextListener</listener-class>
     </listener>
 
 
@@ -77,6 +80,7 @@
         <url-pattern>/druid/*</url-pattern>
         <!--druid/index.html-->
     </servlet-mapping>
+
 
 
     <welcome-file-list>

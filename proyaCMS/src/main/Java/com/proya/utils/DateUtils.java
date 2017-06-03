@@ -1,4 +1,4 @@
-package com.utils;
+package com.proya.utils;
 
 /**
  * Created by wzf on 2017/5/25.

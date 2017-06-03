@@ -1,8 +1,8 @@
-package com.service;
+package com.proya.service;
 
-import com.common.BaseService;
-import com.dao.SysLogMapper;
-import com.entity.SysLog;
+import com.proya.common.BaseService;
+import com.proya.dao.SysLogMapper;
+import com.proya.entity.SysLog;
 import org.springframework.stereotype.Service;
 
 /**

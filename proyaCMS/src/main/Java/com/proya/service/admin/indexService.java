@@ -1,4 +1,4 @@
-package com.service.admin;
+package com.proya.service.admin;
 
 import org.springframework.stereotype.Service;
 

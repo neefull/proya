@@ -1,8 +1,8 @@
-package com.dao;
+package com.proya.dao;
 
 
-import com.common.BaseDao;
-import com.entity.User;
+import com.proya.common.BaseDao;
+import com.proya.entity.User;
 
 /**
  * Created by wzf on 2017/5/28.
