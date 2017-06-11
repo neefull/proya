@@ -1,9 +1,9 @@
 package com.proya.service;
 
 import com.proya.common.BaseService;
-import com.proya.dao.SysLogMapper;
-import com.proya.entity.SysLog;
-import com.proya.dao.UserMapper;
+import com.proya.mapper.SysLogMapper;
+import com.proya.entity.sys.SysLog;
+import com.proya.mapper.UserMapper;
 import com.proya.entity.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

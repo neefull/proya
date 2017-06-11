@@ -1,4 +1,4 @@
-package com.proya.entity;
+package com.proya.entity.sys;
 
 import java.util.Date;
 

@@ -1,6 +1,6 @@
 package com.proya.controller;
 
-import com.proya.entity.SysLog;
+import com.proya.entity.sys.SysLog;
 import com.proya.entity.User;
 import com.proya.common.BaseController;
 import com.proya.service.SysLogService;

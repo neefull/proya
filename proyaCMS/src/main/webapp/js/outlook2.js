@@ -18,8 +18,8 @@ function InitLeftMenu() {
         })
         menulist += '</ul></div>';
     })
-
-	$(".easyui-accordion").append(menulist);
+    ui-accordion
+	$(".easy").append(menulist);
 	
 	$('.easyui-accordion li a').click(function(){
 		var tabTitle = $(this).text();

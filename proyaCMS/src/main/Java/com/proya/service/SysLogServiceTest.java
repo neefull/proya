@@ -1,6 +1,6 @@
 package com.proya.service;
 
-import com.proya.entity.SysLog;
+import com.proya.entity.sys.SysLog;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;

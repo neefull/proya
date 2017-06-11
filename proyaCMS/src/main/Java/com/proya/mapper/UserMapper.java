@@ -1,4 +1,4 @@
-package com.proya.dao;
+package com.proya.mapper;
 
 
 import com.proya.common.BaseDao;

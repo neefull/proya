@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="com.proya.dao.SysLogMapper" >
-    <resultMap id="BaseResultMap" type="com.proya.entity.SysLog" >
+<mapper namespace="com.proya.mapper.SysLogMapper" >
+    <resultMap id="BaseResultMap" type="com.proya.entity.sys.SysLog" >
         <id column="id" property="id" jdbcType="BIGINT" />
         <result column="username" property="username" jdbcType="VARCHAR" />
         <result column="operation" property="operation" jdbcType="VARCHAR" />
@@ -23,7 +23,7 @@
         delete from sys_log
         where id = #{id,jdbcType=BIGINT}
     </delete>
-    <insert id="insert" parameterType="com.proya.entity.SysLog" >
+    <insert id="insert" parameterType="com.proya.entity.sys.SysLog" >
         insert into sys_log (id, username, operation,
         method, params, ip,
         create_date)
@@ -31,7 +31,7 @@
         #{method,jdbcType=VARCHAR}, #{params,jdbcType=VARCHAR}, #{ip,jdbcType=VARCHAR},
         #{createDate,jdbcType=TIMESTAMP})
     </insert>
-    <insert id="insertSelective" parameterType="com.proya.entity.SysLog" >
+    <insert id="insertSelective" parameterType="com.proya.entity.sys.SysLog" >
         insert into sys_log
         <trim prefix="(" suffix=")" suffixOverrides="," >
             <if test="id != null" >
@@ -80,7 +80,7 @@
             </if>
         </trim>
     </insert>
-    <update id="updateByPrimaryKeySelective" parameterType="com.proya.entity.SysLog" >
+    <update id="updateByPrimaryKeySelective" parameterType="com.proya.entity.sys.SysLog" >
         update sys_log
         <set >
             <if test="username != null" >
@@ -104,7 +104,7 @@
         </set>
         where id = #{id,jdbcType=BIGINT}
     </update>
-    <update id="updateByPrimaryKey" parameterType="com.proya.entity.SysLog" >
+    <update id="updateByPrimaryKey" parameterType="com.proya.entity.sys.SysLog" >
     update sys_log
     set username = #{username,jdbcType=VARCHAR},
       operation = #{operation,jdbcType=VARCHAR},
