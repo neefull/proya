@@ -1,13 +1,13 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:hx="http://www.w3.org/1999/XSL/Transform">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head id="Head1">
-    <title>后台框架</title>
-    <script type="text/javascript">
-        jquery实现静态html文件的include嵌入效果
-        $.get("commonCSS.html",function(data){
-            $("#foot").html(data);
-        });
-    </script>
+    <title>漂亮的easyui后台框架演示</title>
+    <link rel="stylesheet" type="text/css" href="../css/default.css"/>
+    <link rel="stylesheet" type="text/css" href="../js/themes/default/easyui.css" />
+    <link rel="stylesheet" type="text/css" href="../js/themes/icon.css" />
+    <script type="text/javascript" src="../js/jquery-1.4.2.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.easyui.js"></script>
+    <script type="text/javascript" src='../js/outlook2.js'> </script>
     <script type="text/javascript">
         var _menus = {"menus":[
             {"menuid":"1","icon":"icon-sys","menuname":"系统管理",
@@ -56,7 +56,6 @@
         }
 
 
-
         //修改密码
         function serverLogin() {
             var $newpass = $('#txtNewPass');
@@ -101,6 +100,7 @@
 
             $('#loginOut').click(function() {
                 $.messager.confirm('系统提示', '您确定要退出本次登录吗?', function(r) {
+
                     if (r) {
                         location.href = '/ajax/loginout.ashx';
                     }
@@ -108,18 +108,16 @@
 
             })
 
+
+
         });
+
+
 
     </script>
 
 </head>
-<body>
-</body>
 <body class="easyui-layout" style="overflow-y: hidden"  scroll="no">
-<iframe height=40 marginwidth=0 marginheight=0  src="../page/commonJS.html"></iframe>
-<iframe height=40 marginwidth=0 marginheight=0  src="../page/commonCSS.html"></iframe>
-<hx:include src="commonJS.html"></hx:include>
-
 <noscript>
     <div style=" position:absolute; z-index:100000; height:2046px;top:0px;left:0px; width:100%; background:white; text-align:center;">
         <img src="images/noscript.gif" alt='抱歉，请开启脚本支持！' />
@@ -127,8 +125,8 @@
 <div region="north" split="true" border="false" style="overflow: hidden; height: 30px;
         background: url(../images/layout-browser-hd-bg.gif) #7f99be repeat-x center 50%;
         line-height: 20px;color: #fff; font-family: Verdana, 微软雅黑,黑体">
-    <span style="float:right; padding-right:20px;" class="head">欢迎 <a href="#" id="editpass">修改密码</a> <a href="#" id="loginOut">安全退出</a></span>
-    <span style="padding-left:10px; font-size: 16px; "><img src="../images/blocks.gif" width="20" height="20" align="absmiddle" />proyaCMS</span>
+    <span style="float:right; padding-right:20px;" class="head">欢迎 16素材 <a href="#" id="editpass">修改密码</a> <a href="#" id="loginOut">安全退出</a></span>
+    <span style="padding-left:10px; font-size: 16px; "><img src="images/blocks.gif" width="20" height="20" align="absmiddle" /> 16素材网  www.16sucai.com</span>
 </div>
 <div region="south" split="true" style="height: 30px; background: #D2E0F2; ">
     <div class="footer">By 疯狂秀才 Email:bjhxl@59ibox.cn</div>
